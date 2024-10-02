@@ -1,0 +1,141 @@
+
+/* Title styling */
+.contact .section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #102447;
+}
+.contact .section-title span {
+    color: #4CAF50; /* Highlight color */
+}
+
+/* Flexbox layout */
+.contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Contact columns */
+.contact-col {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* Contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-group {
+    display: flex;
+    gap: 20px;
+}
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.submit-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Contact info */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.info-icon {
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+/* Map iframe */
+.map-frame {
+    border: 4px solid #666;
+    border-radius: 8px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .contact-section {
+        padding: 30px;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+    .contact-row {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 24px;
+    }
+    .contact-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form-input, .form-textarea {
+        font-size: 14px;
+    }
+    .submit-btn {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 20px;
+    }
+    .section-title {
+        font-size: 20px;
+    }
+    .contact-row {
+        gap: 15px;
+    }
+    .contact-col {
+        padding: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    .form-input, .form-textarea {
+        font-size: 13px;
+        padding: 10px;
+    }
+    .submit-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}

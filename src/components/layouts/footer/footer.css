@@ -1,0 +1,117 @@
+/* Default styles for larger screens (e.g., desktops) */
+.main-footer {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  background-color: #000000;
+  min-height: 350px;
+  width: 100%;
+  color: #ffffff;
+  justify-content: center; /* Center children vertically */
+  align-items: center;     /* Center children horizontally */
+  padding: 10px;
+  text-align: center;      /* Center text within the divs */
+}
+
+.footer-heading {
+  text-align: center;
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.footer-heading h1 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 3.2px;
+  color: #4169e1;
+}
+
+.footer-heading p {
+  font-size: 16px;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center; /* Center icons horizontally */
+  gap: 20px; /* Add space between icons */
+}
+
+.footer-icons {
+  font-size: 40px;
+}
+
+.footer-mini {
+  background-color: #4169e1;
+  display: flex;
+  justify-content: space-between; /* Aligns items with space between them */
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer-mini .footer-copyright {
+  align-self: flex-start; /* Aligns to the left end */
+}
+
+.footer-mini .footer-header ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-mini .footer-header ul li {
+  margin-left: 15px; /* Adjust as needed */
+}
+
+.footer-mini .footer-header ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-mini .footer-header ul li:first-child {
+  margin-left: 0; /* Removes margin for the first item */
+}
+
+/* Responsive styles for tablets (e.g., screens with max-width of 768px) */
+@media (max-width: 768px) {
+  .footer-heading h1 {
+      font-size: 32px; /* Adjust font size for smaller screens */
+  }
+
+  .footer-heading p {
+      font-size: 14px;
+      margin-left: 20px; /* Reduce margins for smaller screens */
+      margin-right: 20px;
+  }
+
+  .footer-icons {
+      font-size: 30px; /* Adjust icon size */
+  }
+
+  .footer-mini {
+      flex-direction: column; /* Stack items vertically */
+      text-align: center; /* Center text for smaller screens */
+      gap: 10px;
+  }
+
+  .footer-mini .footer-copyright {
+      align-self: center; /* Center copyright text */
+      margin-bottom: 10px; /* Add space below for better separation */
+  }
+
+  .footer-mini .footer-header ul {
+      flex-direction: column; /* Stack list items vertically */
+      align-items: center; /* Center list items */
+  }
+
+  .footer-mini .footer-header ul li {
+      margin-left: 0; /* Remove left margin for smaller screens */
+      margin-bottom: 10px; /* Add space below each item */
+  }
+
+  .footer-mini .footer-header ul li:last-child {
+      margin-bottom: 0; /* Remove margin for the last item */
+  }
+}

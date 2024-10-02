@@ -1,0 +1,66 @@
+.approachContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.approachContainer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+ .colImage, .colContent {
+  flex: 1;
+  padding: 20px;
+}
+
+.approach-image img {
+  max-width: 330px;
+  height: auto;
+  display: block;
+}
+
+.approach-image img:hover{
+  transform: scale(1.1);
+}
+.col-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.col-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.approachContainer .btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.approachContainer .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .col-image, .col-content {
+    max-width: 100%;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .approach-image img {
+    margin: 0 auto;
+  }
+}
